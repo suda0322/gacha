@@ -16,3 +16,4 @@ PHPとMySQL(Docker)を使用したガチャシミュレーターです。
 2. 以下のコマンドを実行します。
    ```bash
    docker-compose up -d --build
+   http://localhost:8080/
