@@ -24,7 +24,6 @@ $message = "";
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $gacha = new Gacha();
     try {
-        // 【修正箇所】引数なしの draw10() ではなく、ユーザーIDを渡す draw10($userId) に変更！
         $results = $gacha->draw10($userId);
         $message = "ガチャを回しました！";
     } catch (Exception $e) {
